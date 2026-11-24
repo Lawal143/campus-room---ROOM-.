@@ -1,8 +1,14 @@
-
+HEAD
 
 import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import Link from "next/link";
+
+import type { Metadata } from "next";
+import { Playfair_Display, DM_Sans } from "next/font/google";
+
+07a0220(Initial commit from Create Next App)
+
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -18,6 +24,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "ROOMÉ | Find Your Space",
   description:
+    HEAD
     "Discover and book campus spaces for studying, collaboration and creativity.",
 };
 
@@ -77,7 +84,7 @@ function Footer() {
         </div>
 
         <p className="text-xs text-[#A5A7A3]">
-           ROOMÉ. All rights reserved.
+          ROOMÉ. All rights reserved.
         </p>
 
 
@@ -86,6 +93,10 @@ function Footer() {
   );
 }
 
+"Discover and reserve thoughtfully designed campus spaces for studying, collaboration and creativity.",
+};
+
+07a0220(Initial commit from Create Next App)
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -93,11 +104,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      HEAD
       <body className={`${playfair.variable} ${dmSans.variable} antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />
-      </body>
+
+        <body
+          className={`${playfair.variable} ${dmSans.variable} antialiased`}
+        >
+          {children}
+          07a0220 (Initial commit from Create Next App)
+        </body>
     </html>
   );
 }
