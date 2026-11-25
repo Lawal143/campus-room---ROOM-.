@@ -1,14 +1,6 @@
-HEAD
-
 import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import Link from "next/link";
-
-import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
-
-07a0220(Initial commit from Create Next App)
-
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -24,7 +16,6 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "ROOMÉ | Find Your Space",
   description:
-    HEAD
     "Discover and book campus spaces for studying, collaboration and creativity.",
 };
 
@@ -32,7 +23,6 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-[#383B40] bg-[#17191D]/95 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-12 lg:px-20">
-
         <Link href="/" className="text-3xl font-bold tracking-tight">
           <span className="text-[#F4F0E8]">
             ROOMÉ<span className="text-[#B8F36B]">.</span>
@@ -62,7 +52,6 @@ function Header() {
         >
           Book a Space ↗
         </Link>
-
       </nav>
     </header>
   );
@@ -72,7 +61,6 @@ function Footer() {
   return (
     <footer className="border-t border-[#383B40] bg-[#17191D] px-6 py-10 md:px-12 lg:px-20">
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 sm:flex-row sm:items-center">
-
         <div>
           <p className="text-2xl font-bold">
             ROOMÉ<span className="text-[#B8F36B]">.</span>
@@ -86,36 +74,21 @@ function Footer() {
         <p className="text-xs text-[#A5A7A3]">
           ROOMÉ. All rights reserved.
         </p>
-
-
       </div>
     </footer>
   );
 }
 
-"Discover and reserve thoughtfully designed campus spaces for studying, collaboration and creativity.",
-};
-
-07a0220(Initial commit from Create Next App)
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      HEAD
       <body className={`${playfair.variable} ${dmSans.variable} antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />
-
-        <body
-          className={`${playfair.variable} ${dmSans.variable} antialiased`}
-        >
-          {children}
-          07a0220 (Initial commit from Create Next App)
-        </body>
+      </body>
     </html>
   );
 }
