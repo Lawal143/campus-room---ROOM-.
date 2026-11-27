@@ -30,16 +30,16 @@ function Header() {
         </Link>
 
         <div className="hidden items-center gap-10 text-sm font-medium text-[#A5A7A3] md:flex">
-          <Link href="/#spaces" className="transition hover:text-[#B8F36B]">
+          <Link href="/Explore-spaces" className="transition hover:text-[#B8F36B]">
             Explore Spaces
           </Link>
 
-          <Link href="/about" className="transition hover:text-[#B8F36B]">
+          <Link href="./About" className="transition hover:text-[#B8F36B]">
             About
           </Link>
 
           <Link
-            href="/my-bookings"
+            href="/My-Bookings"
             className="transition hover:text-[#B8F36B]"
           >
             My Bookings
